@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: rgb(23, 121, 212);
+    color: white;
+}
+
+.fk_img {
+    flex: 0 0 64px;
+    padding: 20px;
+    padding-left: 230px;
+}
+
+.searchbar {
+    flex: 1 1 auto;
+
+}
+
+.user_cart {
+    display: flex;
+    flex: 0 0 auto;
+    padding-right: 10rem;
+}
+
+
+.searchbar {
+    display: flex;
+    justify-content: left;
+
+}
+
+.search_product {
+    height: 35px;
+    color: rgb(23, 121, 212);
+    background-color: #f0f0f0;
+    border-radius: 0px 3px 3px 0px;
+    padding-right: 1rem;
+}
+
+.textbox {
+    max-width: 380px;
+    width: 100%;
+    height: 35px;
+    background-color: #f0f0f0;
+    border-radius: 3px 0px 0px 3px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    border: none;
+}
+
+.user, .more, .cart {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.lis {
+    border-bottom: 2px solid rgb(168, 167, 167);
+}
+
+.product_list {
+    max-width: 1240px;
+    margin: 0 auto;
+
+}
+
+.list_pro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_pro span {
+    padding: 15px 0px;
+}
+
+.mobile_product {
+    background-color: #f0f0f0;
+    height: 100%;
+}
+
+.mobile_dis {
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+}
+
+.iphn_view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iphonemini12view {
+    height: 100%;
+    width: 350px;
+}
+
+img.iphone11 {
+    height: 100%;
+    width: 350px;
+}
+
+#view_iphone_desc {
+    width: 700px;
+    height: 90vh;
+}
+
+
+.addbuyaddcartview {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btncartbuy {
+    color: cornsilk;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 35px;
+}
+
+.addcartclick {
+    background: blueviolet;
+}
+
+.buyitemclick {
+    background: coral;
+}
+
+
+.phonetitle {
+    padding: 40px 10px 3px;
+}
+
+.ratingsec {
+    display: flex;
+    font-weight: 800;
+    font-size: 10px;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+.ratingstar {
+    padding: 1px;
+    width: 2rem;
+    background: green;
+    color: white;
+}
+
+.reviewlink {
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+    padding-left: 3px;
+}
+
+.pricesec {
+    display: flex;
+    font-weight: 550;
+    font-size: 30px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.offerpercent {
+    margin-top: .5rem;
+    padding-left: 2rem;
+    font-weight: 800;
+    font-size: 10px;
+    color: green;
+}
+
+.topicava {
+    padding-bottom: 10px;
+}
+
+.offerslistbanks {
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: column;
+}
+
+.offertext {
+    font-size: 12px;
+}
+
+.offertc {
+    font-weight: 700;
+    color: rgb(23, 121, 212);
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .product_list {
+        display: none;
+    }
+
+    .iphn_view {
+        flex-direction: column;
+    }
+
+    .fk_img {
+        flex: 0 0 6px;
+        padding: 5px;
+        padding-left: 5px;
+    }
+    .more , .user{
+        display: none;
+    }
+    .cart div{
+        display: none;
+    }
+    .textbox{
+        width: 10rem;
+    }
+    .user_cart{
+        padding-right: 5px;
+    }
+    #view_iphone_desc {
+        width: 100%;
+        height: 90vh;
+    }
+    img.iphone11 , .iphonemini12view {
+        height: 100%;
+        width: 80%;
+    }
+    
+    .cart{
+        padding: 20px 0px;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .product_list {
+        display: none;
+    }
+    .iphn_view {
+        flex-direction: column;
+    }
+
+    .fk_img {
+        flex: 0 0 6px;
+        padding: 5px;
+        padding-left: 5px;
+    }
+    .more , .user{
+        display: none;
+    }
+    .cart div{
+        display: none;
+    }
+    .textbox{
+        width: 10rem;
+    }
+    .user_cart{
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product_list {
+        display: none;
+    }
+    .iphn_view {
+        flex-direction: column;
+    }
+
+    .fk_img {
+        flex: 0 0 6px;
+        padding: 5px;
+        padding-left: 5px;
+    }
+    .more , .user{
+        display: none;
+    }
+    .cart div{
+        display: none;
+    }
+    .textbox{
+        width: 10rem;
+    }
+    .user_cart{
+        padding-right: 5px;
+    }
+}
